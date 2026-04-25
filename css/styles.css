@@ -1,4 +1,4 @@
-/* ===== BASE ===== */
+/* ===== RESET ===== */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -39,6 +39,11 @@ button {
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -85,6 +90,16 @@ button {
   font-style: normal;
 }
 
+.nav-link {
+  display: block;
+  padding: 24px 0;
+}
+
+.contact-link {
+  display: block;
+  padding: 24px 0;
+}
+
 /* ===== HERO ===== */
 .hero {
   background-color: #2e2f42;
@@ -95,24 +110,29 @@ button {
 .hero-title {
   max-width: 496px;
   margin: 0 auto 48px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero-btn {
   background-color: #4d5ae5;
-  color: #fff;
+  color: #ffffff;
   border-radius: 4px;
   border: none;
+  padding: 16px 32px;
 }
 
 /* ===== FEATURES ===== */
-.features-subtitle {
-  margin-bottom: 8px;
-}
-
 .features-list {
   display: flex;
   gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.features-subtitle {
+  margin-bottom: 8px;
 }
 
 /* ===== TEAM ===== */
@@ -127,7 +147,7 @@ button {
 }
 
 .team-card {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
 }
 
