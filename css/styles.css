@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* RESET */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -35,7 +35,7 @@ button {
   cursor: pointer;
 }
 
-/* ===== VISUALLY HIDDEN ===== */
+/* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,19 +49,19 @@ button {
   overflow: hidden;
 }
 
-/* ===== CONTAINER ===== */
+/* CONTAINER */
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* ===== SECTION ===== */
+/* SECTION */
 .section {
   padding: 120px 0;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -98,7 +98,7 @@ button {
   padding: 24px 0;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
@@ -108,18 +108,18 @@ button {
 .hero-title {
   max-width: 496px;
   margin: 0 auto 48px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .hero-btn {
   background-color: #4d5ae5;
-  color: #ffffff;
+  color: #fff;
   border-radius: 4px;
   border: none;
   padding: 16px 32px;
 }
 
-/* ===== FEATURES ===== */
+/* FEATURES */
 .features-list {
   display: flex;
   gap: 24px;
@@ -133,9 +133,13 @@ button {
   margin-bottom: 8px;
 }
 
-/* ===== TEAM ===== */
+/* TEAM */
 .team {
   background-color: #f4f4fd;
+}
+
+.section-title {
+  text-align: center;
 }
 
 .team-list {
@@ -145,7 +149,7 @@ button {
 }
 
 .team-card {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 0 0 4px 4px;
 }
 
@@ -158,12 +162,16 @@ button {
   margin-bottom: 8px;
 }
 
-/* ===== PORTFOLIO ===== */
+/* PORTFOLIO */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
   margin-top: 72px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-content {
@@ -176,7 +184,7 @@ button {
   margin-bottom: 8px;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
