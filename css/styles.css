@@ -1,8 +1,7 @@
-/* ===== RESET ===== */
+/* ===== BASE ===== */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
 }
 
 h1,
@@ -34,9 +33,18 @@ button {
   cursor: pointer;
 }
 
+/* ===== VISUALLY HIDDEN ===== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 /* ===== CONTAINER ===== */
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -77,75 +85,31 @@ button {
   font-style: normal;
 }
 
-/* ===== LOGO ===== */
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #2e2f42;
-}
-
-.logo-accent {
-  color: #4d5ae5;
-}
-
-.logo-footer {
-  color: #f4f4fd;
-}
-
-/* ===== LINKS ===== */
-.nav-link {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
-  display: block;
-}
-
-.contact-link {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: #404bbf;
-}
-
 /* ===== HERO ===== */
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
-}
-
-.hero-container {
   text-align: center;
 }
 
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  color: #ffffff;
-  margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto 48px;
+  color: #fff;
 }
 
 .hero-btn {
   background-color: #4d5ae5;
-  color: #ffffff;
-  padding: 16px 32px;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #404bbf;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
 }
 
 /* ===== FEATURES ===== */
+.features-subtitle {
+  margin-bottom: 8px;
+}
+
 .features-list {
   display: flex;
   gap: 24px;
@@ -159,11 +123,21 @@ button {
 .team-list {
   display: flex;
   gap: 24px;
+  margin-top: 72px;
 }
 
 .team-card {
-  background-color: #ffffff;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-content {
+  padding: 32px 16px;
   text-align: center;
+}
+
+.team-name {
+  margin-bottom: 8px;
 }
 
 /* ===== PORTFOLIO ===== */
@@ -171,10 +145,17 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  margin-top: 72px;
 }
 
-.portfolio-item {
-  border-bottom: 1px solid #e7e9fc;
+.portfolio-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-subtitle {
+  margin-bottom: 8px;
 }
 
 /* ===== FOOTER ===== */
@@ -184,6 +165,7 @@ button {
 }
 
 .footer-text {
+  margin-top: 16px;
+  max-width: 264px;
   color: #f4f4fd;
-  line-height: 1.5;
 }
